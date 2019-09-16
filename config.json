@@ -1,0 +1,5 @@
+{
+	// Note: Make sure all device fixtures required by the tests are listed here
+	"fixtures": [
+	]
+}
