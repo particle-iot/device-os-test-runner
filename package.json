@@ -1,0 +1,23 @@
+{
+  "name": "device-os-test-harness",
+  "version": "0.1.0",
+  "description": "Device OS Test Harness",
+  "license": "Apache-2.0",
+  "private": true,
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "test": "mocha -r esm"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chalk": "^2.4.2",
+    "clone": "^2.1.2",
+    "convict": "^5.1.0",
+    "esm": "^3.2.25",
+    "mocha": "^6.2.0",
+    "particle-api-js": "^8.0.0",
+    "particle-usb": "^0.5.0"
+  }
+}

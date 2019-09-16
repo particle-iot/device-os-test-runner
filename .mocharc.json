@@ -1,0 +1,12 @@
+{
+	"require": [
+		"lib/mocha"
+	],
+	"spec": [
+		"lib/mocha/hooks.js",
+		"test/**/*.spec.js"
+	],
+	"ui": "qunit",
+	"timeout": 300000,
+	"slow": 90000
+}
