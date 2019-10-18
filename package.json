@@ -1,21 +1,28 @@
 {
-  "name": "device-os-test-harness",
+  "name": "@particle/device-os-test",
   "version": "0.1.0",
-  "description": "Device OS Test Harness",
+  "description": "Device OS Test Runner",
   "license": "Apache-2.0",
-  "private": true,
+  "main": "lib/index.js",
+  "bin": "./bin/device-os-test",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/particle-iot/device-os-test"
+  },
   "engines": {
     "node": ">=12"
   },
   "scripts": {
-    "test": "mocha -r esm"
+    "start": "node -r esm lib/index.js"
   },
   "dependencies": {
     "chai": "^4.2.0",
     "chalk": "^2.4.2",
-    "clone": "^2.1.2",
+    "common-path-prefix": "^2.0.0",
     "convict": "^5.1.0",
     "esm": "^3.2.25",
+    "fast-glob": "^3.1.0",
+    "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "mocha": "^6.2.0",
     "particle-api-js": "^8.0.0",
