@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Device OS Test Runner",
   "license": "Apache-2.0",
-  "main": "lib/index.js",
+  "main": "./lib/index.js",
   "bin": "./bin/device-os-test",
   "repository": {
     "type": "git",
@@ -13,12 +13,11 @@
     "node": ">=12"
   },
   "scripts": {
-    "start": "node -r esm lib/index.js"
+    "start": "node -r esm ./lib/index.js"
   },
   "dependencies": {
     "chai": "^4.2.0",
     "chalk": "^2.4.2",
-    "common-path-prefix": "^2.0.0",
     "convict": "^5.1.0",
     "esm": "^3.2.25",
     "fast-glob": "^3.1.0",
@@ -26,6 +25,8 @@
     "mkdirp": "^0.5.1",
     "mocha": "^6.2.0",
     "particle-api-js": "^8.0.0",
-    "particle-usb": "^0.5.0"
+    "particle-usb": "^0.5.0",
+    "shellsubstitute": "^1.2.0",
+    "simple-git": "^1.126.0"
   }
 }
