@@ -5,5 +5,5 @@
 
 set -e
 
-this_dir="$(cd "$(dirname $0)" && pwd)"
+this_dir="$(dirname "$(realpath "$0")")"
 node -r "$this_dir/../node_modules/esm" "$this_dir/../lib/index.js" "$@"
