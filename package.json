@@ -19,7 +19,6 @@
   "dependencies": {
     "chai": "^4.2.0",
     "chalk": "^2.4.2",
-    "commondir": "^1.0.1",
     "convict": "^5.1.0",
     "esm": "^3.2.25",
     "fast-glob": "^3.1.0",
@@ -29,6 +28,7 @@
     "particle-api-js": "^8.0.0",
     "particle-usb": "^0.5.1",
     "shellsubstitute": "^1.2.0",
-    "simple-git": "^1.126.0"
+    "simple-git": "^1.126.0",
+    "tmp": "^0.1.0"
   }
 }
