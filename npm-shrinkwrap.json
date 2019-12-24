@@ -5,9 +5,9 @@
   "requires": true,
   "dependencies": {
     "@babel/runtime-corejs2": {
-      "version": "7.6.3",
-      "resolved": "https://registry.npmjs.org/@babel/runtime-corejs2/-/runtime-corejs2-7.6.3.tgz",
-      "integrity": "sha512-nuA2o+rgX2+PrNTZ063ehncVcg7sn+tU71BB81SaWRVUbGwCOlb0+yQA1e0QqmzOfRSYOxfvf8cosYqFbJEiwQ==",
+      "version": "7.7.7",
+      "resolved": "https://registry.npmjs.org/@babel/runtime-corejs2/-/runtime-corejs2-7.7.7.tgz",
+      "integrity": "sha512-P91T3dFYQL7aj44PxOMIAbo66Ag3NbmXG9fseSYaXxapp3K9XTct5HU9IpTOm2D0AoktKusgqzN5YcSxZXEKBQ==",
       "requires": {
         "core-js": "^2.6.5",
         "regenerator-runtime": "^0.13.2"
@@ -103,9 +103,9 @@
       "integrity": "sha512-1w52Nyx4Gq47uuu0EVcsHBxZFJgurQ+rTKS3qMHxR1GY2T8c2AJYd6vZoZ9q1rupaDjU0yT+Jc2XTyXkjeMA+Q=="
     },
     "@types/node": {
-      "version": "10.17.0",
-      "resolved": "https://registry.npmjs.org/@types/node/-/node-10.17.0.tgz",
-      "integrity": "sha512-wuJwN2KV4tIRz1bu9vq5kSPasJ8IsEjZaP1ZR7KlmdUZvGF/rXy8DmXOVwUD0kAtvtJ7aqMKPqUXC0NUTDbrDg=="
+      "version": "10.17.12",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-10.17.12.tgz",
+      "integrity": "sha512-SSB4O9/0NVv5mbQ5/MabnAyFfcpVFRVIJj1TZkG21HHgwXQGjosiQB3SBWC9pMCMUTNpWL9gUe//9mFFPQAdKw=="
     },
     "ansi-colors": {
       "version": "3.2.3",
@@ -977,9 +977,9 @@
       "integrity": "sha512-boQj1WFgQH3v4clhu3mTNfP+vOBxorDlE8EKiMjUlLG3C4qAESnn9AxIOkFgTR2c9LtzNjPrjS60cT27ZKBhaA=="
     },
     "node-abi": {
-      "version": "2.12.0",
-      "resolved": "https://registry.npmjs.org/node-abi/-/node-abi-2.12.0.tgz",
-      "integrity": "sha512-VhPBXCIcvmo/5K8HPmnWJyyhvgKxnHTUMXR/XwGHV68+wrgkzST4UmQrY/XszSWA5dtnXpNp528zkcyJ/pzVcw==",
+      "version": "2.13.0",
+      "resolved": "https://registry.npmjs.org/node-abi/-/node-abi-2.13.0.tgz",
+      "integrity": "sha512-9HrZGFVTR5SOu3PZAnAY2hLO36aW1wmA+FDsVkr85BTST32TLCA1H/AEcatVRAsWLyXS3bqUDYCAjq5/QGuSTA==",
       "requires": {
         "semver": "^5.4.1"
       }
@@ -1091,9 +1091,9 @@
       }
     },
     "particle-usb": {
-      "version": "0.5.1",
-      "resolved": "https://registry.npmjs.org/particle-usb/-/particle-usb-0.5.1.tgz",
-      "integrity": "sha512-IObi7aabsWLUpRorIvvFx2pWezmYaHbiJ07kKsykorSCwT/MpgCrdD0RfIJZjn4dsUqzJO83SpWeHqhiZzQ6ig==",
+      "version": "0.5.3",
+      "resolved": "https://registry.npmjs.org/particle-usb/-/particle-usb-0.5.3.tgz",
+      "integrity": "sha512-0PPzrtx82EJgRXPuy9dGByVk+K7D9Im2VAKS3Wbx7JJplHb/IFbZCEgKUWrlRsjxDGBJWnVIKs2hlxIkCSANYA==",
       "requires": {
         "@babel/runtime-corejs2": "^7.3.4",
         "ip": "^1.1.5",
@@ -1123,9 +1123,9 @@
       "integrity": "sha512-oLHIdio3tZ0qH76NybpeneBhYVj0QFTfXEFTc/B3zKQspYfYYkWYgFsmzo+4kvId/bQRcNkVeguI3y+CD22BtA=="
     },
     "prebuild-install": {
-      "version": "5.3.2",
-      "resolved": "https://registry.npmjs.org/prebuild-install/-/prebuild-install-5.3.2.tgz",
-      "integrity": "sha512-INDfXzTPnhT+WYQemqnAXlP7SvfiFMopMozSgXCZ+RDLb279gKfIuLk4o7PgEawLp3WrMgIYGBpkxpraROHsSA==",
+      "version": "5.3.3",
+      "resolved": "https://registry.npmjs.org/prebuild-install/-/prebuild-install-5.3.3.tgz",
+      "integrity": "sha512-GV+nsUXuPW2p8Zy7SarF/2W/oiK8bFQgJcncoJ0d7kRpekEA0ftChjfEaF9/Y+QJEc/wFR7RAEa8lYByuUIe2g==",
       "requires": {
         "detect-libc": "^1.0.3",
         "expand-template": "^2.0.3",
@@ -1462,13 +1462,13 @@
       "integrity": "sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g=="
     },
     "usb": {
-      "version": "1.6.0",
-      "resolved": "https://registry.npmjs.org/usb/-/usb-1.6.0.tgz",
-      "integrity": "sha512-52DyWlCk9K+iw3LnvY95WXSnpHjxJoI++aGkV8HiMNPc4zmvDQlYvWAzrkbJ2JH3oUcx26XfU5sZcG4RAcVkMg==",
+      "version": "1.6.2",
+      "resolved": "https://registry.npmjs.org/usb/-/usb-1.6.2.tgz",
+      "integrity": "sha512-KcovLXRQuH63iEtnqXyDQGOi5dXHpLM5lZBIUsqSJQToua8nL2sVCieQTkzQBfLe5mCuvk40MgKciI61lgevWw==",
       "requires": {
         "bindings": "^1.4.0",
         "nan": "2.13.2",
-        "prebuild-install": "^5.2.4"
+        "prebuild-install": "^5.3.3"
       }
     },
     "util-deprecate": {
