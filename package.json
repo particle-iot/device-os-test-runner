@@ -1,7 +1,7 @@
 {
   "name": "@particle/device-os-test",
   "version": "0.1.0",
-  "description": "Device OS Testing Utility",
+  "description": "Device OS Test Runner",
   "license": "Apache-2.0",
   "type": "module",
   "main": "./lib/index.js",
