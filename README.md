@@ -5,7 +5,7 @@
 Install with [npm](https://npmjs.com) globally:
 
 ```sh
-npm install --global device-os-test
+npm install --global @particle/device-os-test
 ```
 
 device-os-test requires Node 12 to run.
