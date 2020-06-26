@@ -1,9 +1,0 @@
-#!/bin/bash
-
-# TODO: This script preloads the esm module and is only useful with pre-LTS 12 and older
-# versions of Node. Consider replacing this file with a symlink to ../lib/index.js.
-
-set -e
-
-this_dir="$(dirname "$(realpath "$0")")"
-node -r "$this_dir/../node_modules/esm" "$this_dir/../lib/index.js" "$@"
