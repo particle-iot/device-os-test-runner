@@ -3,8 +3,10 @@
   "version": "0.2.2",
   "description": "Device OS Test Runner",
   "license": "Apache-2.0",
-  "main": "./lib/index.js",
-  "bin": "./lib/index.js",
+  "main": "lib/index.js",
+  "bin": {
+    "device-os-test": "lib/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/particle-iot/device-os-test-runner.git"
@@ -13,7 +15,7 @@
     "node": ">=12"
   },
   "scripts": {
-    "start": "node ./lib/index.js"
+    "start": "node lib/index.js"
   },
   "dependencies": {
     "chai": "^4.2.0",
