@@ -1,6 +1,12 @@
 # Device OS Test Runner
 
-## Installation
+This is a CLI for executing automated, hardware-in-the-loop, Device OS integration tests for concerns that involve the cloud such as `Particle.publish|function|variable|subscribe`. 
+
+Device OS Integration tests live in https://github.com/particle-iot/device-os/tree/develop/user/tests/integration and run before all major releases in our CD systems. 
+
+Test assertions can be made in Node.js with Mocha and in C++ with Catch2.
+
+## Install
 
 Install with [npm](https://npmjs.com) globally:
 
@@ -8,19 +14,18 @@ Install with [npm](https://npmjs.com) globally:
 npm install --global @particle/device-os-test-runner
 ```
 
-device-os-test requires Node 12 to run.
+Any LTS Node.js version above 12.0 should work. The tool was initially built with and heavily used with Node.js 12.x
 
-## Getting Started
+## Usage
 
-### Prerequisites
+### Prepare device, firmware, and CLI
 
-- Two Gen2 or Gen3 devices connected to the host computer via USB (the examples in this section use Borons).
-- [Device OS source](https://github.com/particle-iot/device-os). Make sure the system firmware is compiled and flashed to the devices.
-- [Particle CLI](https://github.com/particle-iot/particle-cli). Make sure you are logged in with your user account.
+- Plugin at least one Gen2 or Gen3 device to the host computer via USB (the examples in this section use Borons).
+- Get a git clone of [Device OS](https://github.com/particle-iot/device-os).
+- Install the [Particle CLI](https://github.com/particle-iot/particle-cli) and ensure you are logged in.
+- Compile and flash the desired system firmware version to the device.
 
-Source code of all examples can be found in the [examples](https://github.com/particle-iot/device-os-test/tree/master/examples) directory.
-
-### Creating a Test Suite
+### Create a Test Suite
 
 device-os-test is based on the [Mocha](https://mochajs.org) testing framework. Test cases in Mocha are organized into test suites which are described in JavaScript spec files. By default, device-os-test looks for the spec files in the `user/tests/integration` directory.
 
@@ -214,3 +219,8 @@ fixture('i2c_slave', 'i2c_master');
 The test suite has two Device OS applications: [i2c_master](https://github.com/particle-iot/device-os-test/tree/master/examples/i2c_test/i2c_master) and [i2c_slave](https://github.com/particle-iot/device-os-test/tree/master/examples/i2c_test/i2c_slave). By default, if the name of an application directory matches the name of a device's alias, the application will be flashed to that device.
 
 The order in which test cases on both devices are executed depends on their names (ArduinoUnit sorts test cases by name) and, if the test names on both devices match, on the order in which the aliases of the devices are passed to the `fixture()` function in the spec file. For the I2C test, it is important to start the slave device first, hence why its alias comes before the alias of the master device in the list of `fixture()` arguments.
+
+
+## joe notes/content to re-incorporate
+
+Source code of all examples can be found in the [examples](https://github.com/particle-iot/device-os-test/tree/master/examples) directory.
