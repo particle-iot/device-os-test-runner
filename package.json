@@ -15,7 +15,9 @@
     "node": ">=12"
   },
   "scripts": {
-    "start": "node lib/index.js"
+    "start": "node lib/index.js",
+    "lint": "eslint . --quiet -f unix",
+    "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
     "chai": "^4.3.4",
@@ -30,5 +32,9 @@
     "shellsubstitute": "^1.2.0",
     "simple-git": "^1.126.0",
     "tmp": "^0.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-particle": "^2.5.0"
   }
 }
