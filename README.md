@@ -214,3 +214,14 @@ fixture('i2c_slave', 'i2c_master');
 The test suite has two Device OS applications: [i2c_master](https://github.com/particle-iot/device-os-test/tree/master/examples/i2c_test/i2c_master) and [i2c_slave](https://github.com/particle-iot/device-os-test/tree/master/examples/i2c_test/i2c_slave). By default, if the name of an application directory matches the name of a device's alias, the application will be flashed to that device.
 
 The order in which test cases on both devices are executed depends on their names (ArduinoUnit sorts test cases by name) and, if the test names on both devices match, on the order in which the aliases of the devices are passed to the `fixture()` function in the spec file. For the I2C test, it is important to start the slave device first, hence why its alias comes before the alias of the master device in the list of `fixture()` arguments.
+
+## Contributing to this tool
+
+### Get the linter/tests working
+
+Git clone + cd into cloned directory, then:
+
+1. `nvm use`; use right version of node
+1. `npm install`; get depenencies
+1. `npm test`; watch the linter + tests run
+1. Add code and test coverage as you go
