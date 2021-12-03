@@ -1,3 +1,5 @@
+![Build Status](https://github.com/particle-iot/device-os-test-runner/actions/workflows/ci.yaml/badge.svg)
+
 # Device OS Test Runner
 
 ## Installation
