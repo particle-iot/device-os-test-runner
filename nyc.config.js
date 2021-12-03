@@ -1,3 +1,6 @@
 module.exports = {
-	exclude: ['lib/test/**', 'lib/**/*.test.js']
+	branches: 0,
+	lines: 9,
+	functions: 4,
+	statements: 9
 };

@@ -7,6 +7,5 @@ module.exports = {
 	rules: {
 		'max-len': 'warn'
 	},
-	ignorePatterns: ['examples'],
 	root: true
 };
