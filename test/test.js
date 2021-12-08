@@ -4,6 +4,8 @@ const chaiAsPromised = require('chai-as-promised');
 const sinonChai = require('sinon-chai');
 const _ = require('lodash');
 
+const path = require('path');
+
 chai.use(chaiSubset);
 chai.use(chaiAsPromised);
 chai.use(sinonChai);
@@ -69,8 +71,17 @@ class Logger {
 
 const log = new Logger();
 
+function fixturePath(...subDirs) {
+	let p = path.join(__dirname, 'fixtures');
+	if (subDirs) {
+		p = path.join(p, ...subDirs);
+	}
+	return p;
+}
+
 module.exports = {
 	expect,
 	config,
-	log
+	log,
+	fixturePath
 };

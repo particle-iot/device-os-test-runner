@@ -1,6 +1,6 @@
 suite('suite_01');
 
-platform('boron');
+platform('gen2', 'gen3');
 
 test('test_01', () => {
 });
