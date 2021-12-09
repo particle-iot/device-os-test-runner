@@ -1,17 +1,17 @@
-const { expect, config, log } = require('./test');
+const { expect, config, log, fixturePath } = require('./test');
 const proxyquire = require('proxyquire');
 const { Runner } = proxyquire('../lib/runner', { './config': { config } });
+const { RunMode } = require('../lib/config');
 
 const sinon = require('sinon');
-
-const path = require('path');
 
 describe('Runner', () => {
 	let runner = null;
 
 	beforeEach(() => {
 		config.set({
-			testDir: path.join(__dirname, 'fixtures'),
+			testDir: fixturePath(),
+			runMode: RunMode.NORMAL,
 			platforms: ['boron'],
 			patterns: [],
 			filters: []
@@ -19,12 +19,13 @@ describe('Runner', () => {
 		runner = new Runner({ log });
 	});
 
-	afterEach(() => {
+	afterEach(async () => {
 		sinon.restore();
+		await runner.shutdown();
 		config.clear();
 	});
 
-	describe('init', () => {
+	describe('init()', () => {
 		it('loads test files', async () => {
 			await runner.init();
 			expect(runner.suites).to.containSubset([
