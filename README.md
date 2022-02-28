@@ -4,13 +4,13 @@
 
 ## Installation
 
-Install with [npm](https://npmjs.com) globally from the top level `device-os/user/tests/integration/` directory:
+`device-os-test` requires Node 12 to run, make sure Node 12 is installed first.
+
+Install `device-os-test` with [npm](https://npmjs.com) globally:
 
 ```sh
-device-os/user/tests/integration $ npm install --global @particle/device-os-test-runner
+npm install --global @particle/device-os-test-runner
 ```
-
-device-os-test requires Node 12 to run.
 
 ## Getting Started
 
