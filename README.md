@@ -4,10 +4,10 @@
 
 ## Installation
 
-Install with [npm](https://npmjs.com) globally:
+Install with [npm](https://npmjs.com) globally from the top level `device-os/user/tests/integration/` directory:
 
 ```sh
-npm install --global @particle/device-os-test-runner
+device-os/user/tests/integration $ npm install --global @particle/device-os-test-runner
 ```
 
 device-os-test requires Node 12 to run.
@@ -71,15 +71,44 @@ test(this_test_always_succeeds) {
 
 Device OS tests are implemented using the [ArduinoUnit](https://github.com/mmurdoch/arduinounit) library. Device OS has a port of that library which is available for use in test applications.
 
-Run the tests using the following command:
+### Building and running tests
+
+Build and Run the tests using the following command pattern:
 
 ```sh
-device-os-test run test boron
+device-os-test build <platform> <test>
+device-os-test run <platform> <test>
 ```
 
-> To diagnose errors, enable verbose logging by providing the runner with a `-v` argument in the command line.
+E.g. Clean build all tests (for boron) using the following command:
 
-`run` tells the device-os-test to start running tests. All other arguments following that command are interpreted as test filters. A filter can be a directory name or a tag. In the above command, `test` is the directory containing our test files and `boron` specifies the target platform. Filter arguments are optional and, if not specified, device-os-test will run all tests on all supported platforms.
+```sh
+device-os-test build boron
+```
+
+E.g. Run all tests (for boron) using the following command:
+
+```sh
+device-os-test run boron
+```
+
+E.g. Clean build a specific test (for boron) like so:
+
+```sh
+device-os-test build boron slo/connect_time -v
+```
+
+E.g. Run a specific test (for boron) like so:
+
+```sh
+device-os-test run boron slo/connect_time -v
+```
+
+- `-v` To diagnose errors, enable verbose logging by providing the runner with a `-v` argument in the command line.
+- `run` tells the device-os-test to start running tests. All other arguments following that command are interpreted as test filters. A filter can be a directory name or a tag.
+- `build` can be used to clean build the specified tests.
+- `<test>` is the directory containing our test files. Optional, if not specified all tests will be targeted.
+- `<platform>` specifies the target platform. Filter arguments are optional and, if not specified, device-os-test will run all tests on all supported platforms. Optional, if not specified all platforms will be targeted.
 
 When started, device-os-test will build test applications, flash the resulting binaries to the devices and start monitoring execution of the tests. When all tests are finished, it will print a summary report, which for the tests in this example should look as follows:
 
