@@ -20,25 +20,15 @@ describe('platform.js', () => {
 
 	describe('expected tags for selected platforms', () => {
 		const expectedTags = {
-			// TODO: "som" is missing, add it to device-constants + update this test
-			p2: ['p2', 'gen3', /* TODO 'som',*/ 'wifi', 'ble', 'udp'],
-			// Note: device-constants provides "gnss", device-os-test-runner provided "gps"
-			// let's use "gnss" instead because it's a more accurate reflection of reality.
-			// device-os integration tests don't use "gps" tag https://github.com/particle-iot/device-os/tree/develop/user/tests/integration
-			// So no action needed
+			p2: ['p2', 'gen3', 'wifi', 'ble', 'udp'],
 			tracker: ['tracker', 'gen3', 'som', 'cellular', 'ble', 'udp', 'gnss'],
-			// Note: added mesh device to make it pass
 			b5som: ['b5som', 'gen3', 'som', 'cellular', 'ble', 'udp', 'mesh'],
-			// Note: Added mesh
 			bsom: ['bsom', 'gen3', 'som', 'cellular', 'ble', 'udp', 'mesh'],
-			// Note: Added mesh
 			boron: ['boron', 'gen3', 'cellular', 'ble', 'udp', 'mesh'],
-			// Note: Added mesh
 			argon: ['argon', 'gen3', 'wifi', 'ble', 'udp', 'mesh'],
 			electron: ['electron', 'gen2', 'cellular', 'udp'],
 			p1: ['p1', 'gen2', 'wifi', 'tcp'],
 			photon: ['photon', 'gen2', 'wifi', 'tcp']
-
 		};
 		it('provides all expected data for p2', () => {
 			const p2 = platformForName('p2');
