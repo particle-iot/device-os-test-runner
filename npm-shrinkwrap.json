@@ -491,10 +491,18 @@
       "resolved": "https://registry.npmjs.org/@particle/device-constants/-/device-constants-1.7.0.tgz",
       "integrity": "sha512-tRWR+uIGmpZP2V3BMdevn7ukrAJMmIpyttGMfGQbyJdRmpwr57MBv4HvHXVOUIWjIQcWKgk+V5kySHzycqleSg=="
     },
+    "@particle/device-os-protobuf": {
+      "version": "1.2.1",
+      "resolved": "https://registry.npmjs.org/@particle/device-os-protobuf/-/device-os-protobuf-1.2.1.tgz",
+      "integrity": "sha512-Y1T7LkZ1LtNAM/DC4nF6kUKpr9DYYvBDRBZikyv0APup01qW8MaB0/Rzdf+4tumHRBKRCA3zFmPGz56ietnTgQ==",
+      "requires": {
+        "protobufjs": "^6.11.2"
+      }
+    },
     "@protobufjs/aspromise": {
       "version": "1.1.2",
       "resolved": "https://registry.npmjs.org/@protobufjs/aspromise/-/aspromise-1.1.2.tgz",
-      "integrity": "sha1-m4sMxmPWaafY9vXQiToU00jzD78="
+      "integrity": "sha512-j+gKExEuLmKwvz3OgROXtrJ2UG2x8Ch2YZUxahh+s1F2HZ+wAceUNLkvy6zKCPVRkU++ZWQrdxsUeQXmcg4uoQ=="
     },
     "@protobufjs/base64": {
       "version": "1.1.2",
@@ -509,12 +517,12 @@
     "@protobufjs/eventemitter": {
       "version": "1.1.0",
       "resolved": "https://registry.npmjs.org/@protobufjs/eventemitter/-/eventemitter-1.1.0.tgz",
-      "integrity": "sha1-NVy8mLr61ZePntCV85diHx0Ga3A="
+      "integrity": "sha512-j9ednRT81vYJ9OfVuXG6ERSTdEL1xVsNgqpkxMsbIabzSo3goCjDIveeGv5d03om39ML71RdmrGNjG5SReBP/Q=="
     },
     "@protobufjs/fetch": {
       "version": "1.1.0",
       "resolved": "https://registry.npmjs.org/@protobufjs/fetch/-/fetch-1.1.0.tgz",
-      "integrity": "sha1-upn7WYYUr2VwDBYZ/wbUVLDYTEU=",
+      "integrity": "sha512-lljVXpqXebpsijW71PZaCYeIcE5on1w5DlQy5WH6GLbFryLUrBD4932W/E2BSpfRJWseIL4v/KPgBFxDOIdKpQ==",
       "requires": {
         "@protobufjs/aspromise": "^1.1.1",
         "@protobufjs/inquire": "^1.1.0"
@@ -523,27 +531,27 @@
     "@protobufjs/float": {
       "version": "1.0.2",
       "resolved": "https://registry.npmjs.org/@protobufjs/float/-/float-1.0.2.tgz",
-      "integrity": "sha1-Xp4avctz/Ap8uLKR33jIy9l7h9E="
+      "integrity": "sha512-Ddb+kVXlXst9d+R9PfTIxh1EdNkgoRe5tOX6t01f1lYWOvJnSPDBlG241QLzcyPdoNTsblLUdujGSE4RzrTZGQ=="
     },
     "@protobufjs/inquire": {
       "version": "1.1.0",
       "resolved": "https://registry.npmjs.org/@protobufjs/inquire/-/inquire-1.1.0.tgz",
-      "integrity": "sha1-/yAOPnzyQp4tyvwRQIKOjMY48Ik="
+      "integrity": "sha512-kdSefcPdruJiFMVSbn801t4vFK7KB/5gd2fYvrxhuJYg8ILrmn9SKSX2tZdV6V+ksulWqS7aXjBcRXl3wHoD9Q=="
     },
     "@protobufjs/path": {
       "version": "1.1.2",
       "resolved": "https://registry.npmjs.org/@protobufjs/path/-/path-1.1.2.tgz",
-      "integrity": "sha1-bMKyDFya1q0NzP0hynZz2Nf79o0="
+      "integrity": "sha512-6JOcJ5Tm08dOHAbdR3GrvP+yUUfkjG5ePsHYczMFLq3ZmMkAD98cDgcT2iA1lJ9NVwFd4tH/iSSoe44YWkltEA=="
     },
     "@protobufjs/pool": {
       "version": "1.1.0",
       "resolved": "https://registry.npmjs.org/@protobufjs/pool/-/pool-1.1.0.tgz",
-      "integrity": "sha1-Cf0V8tbTq/qbZbw2ZQbWrXhG/1Q="
+      "integrity": "sha512-0kELaGSIDBKvcgS4zkjz1PeddatrjYcmMWOlAuAPwAeccUrPHdUqo/J6LiymHHEiJT5NrF1UVwxY14f+fy4WQw=="
     },
     "@protobufjs/utf8": {
       "version": "1.1.0",
       "resolved": "https://registry.npmjs.org/@protobufjs/utf8/-/utf8-1.1.0.tgz",
-      "integrity": "sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA="
+      "integrity": "sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw=="
     },
     "@sinonjs/commons": {
       "version": "1.8.3",
@@ -581,14 +589,14 @@
       "dev": true
     },
     "@types/long": {
-      "version": "4.0.1",
-      "resolved": "https://registry.npmjs.org/@types/long/-/long-4.0.1.tgz",
-      "integrity": "sha512-5tXH6Bx/kNGd3MgffdmP4dy2Z+G4eaXw0SE81Tq3BNadtnMR5/ySMzX4SLEzHJzSmPNn4HIdpQsBvXMUykr58w=="
+      "version": "4.0.2",
+      "resolved": "https://registry.npmjs.org/@types/long/-/long-4.0.2.tgz",
+      "integrity": "sha512-MqTGEo5bj5t157U6fA/BiDynNkn0YknVdh48CMPkTSpFTVmvao5UQmm7uEF6xBEo7qIMAlY/JSleYaE6VOdpaA=="
     },
     "@types/node": {
-      "version": "16.11.12",
-      "resolved": "https://registry.npmjs.org/@types/node/-/node-16.11.12.tgz",
-      "integrity": "sha512-+2Iggwg7PxoO5Kyhvsq9VarmPbIelXP070HMImEpbtGCoyWNINQj4wzjbQCXzdHTRXnqufutJb5KAURZANNBAw=="
+      "version": "17.0.40",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-17.0.40.tgz",
+      "integrity": "sha512-UXdBxNGqTMtm7hCwh9HtncFVLrXoqA3oJW30j6XWp5BH/wu3mVeaxo7cq5benFdBw34HB3XDT2TRPI7rXZ+mDg=="
     },
     "acorn": {
       "version": "8.7.1",
@@ -2252,9 +2260,9 @@
       }
     },
     "node-addon-api": {
-      "version": "4.2.0",
-      "resolved": "https://registry.npmjs.org/node-addon-api/-/node-addon-api-4.2.0.tgz",
-      "integrity": "sha512-eazsqzwG2lskuzBqCGPi7Ac2UgOoMz8JVOXVhTvvPDYhthvNpefx8jWD8Np7Gv+2Sz0FlPWZk0nJV0z598Wn8Q=="
+      "version": "4.3.0",
+      "resolved": "https://registry.npmjs.org/node-addon-api/-/node-addon-api-4.3.0.tgz",
+      "integrity": "sha512-73sE9+3UaLYYFmDsFZnqCInzPyh3MqIwZO9cw58yIqAZhONrrabrYyYe3TuIqtIiOuTXVhsGau8hcrhhwSsDIQ=="
     },
     "node-environment-flags": {
       "version": "1.0.5",
@@ -2266,9 +2274,9 @@
       }
     },
     "node-gyp-build": {
-      "version": "4.3.0",
-      "resolved": "https://registry.npmjs.org/node-gyp-build/-/node-gyp-build-4.3.0.tgz",
-      "integrity": "sha512-iWjXZvmboq0ja1pUGULQBexmxq8CV4xBhX7VDOTbL7ZR4FOowwY/VOtRxBN/yKxmdGoIp4j5ysNT4u3S2pDQ3Q=="
+      "version": "4.4.0",
+      "resolved": "https://registry.npmjs.org/node-gyp-build/-/node-gyp-build-4.4.0.tgz",
+      "integrity": "sha512-amJnQCcgtRVw9SvoebO3BKGESClrfXGCUTX9hSn1OuGQTQBOZmVd0Z0OlecpuRksKvbsUqALE8jls/ErClAPuQ=="
     },
     "node-preload": {
       "version": "0.2.1",
@@ -2615,12 +2623,13 @@
       }
     },
     "particle-usb": {
-      "version": "2.0.0",
-      "resolved": "https://registry.npmjs.org/particle-usb/-/particle-usb-2.0.0.tgz",
-      "integrity": "sha512-eak87vRbd9N01YN+M6Yk72VN3BDY3dWd+yIiz5kLZolDp6B25qlz/R9Hi2dKMslUF8+Qm1B2AOC6DGi+hua/tQ==",
+      "version": "2.1.0",
+      "resolved": "https://registry.npmjs.org/particle-usb/-/particle-usb-2.1.0.tgz",
+      "integrity": "sha512-TB8sPXTkccV8WxwzYb8FWtS60jvzwGttpC6BEUsautYd+ig2sct93ZSuuVnA7sOYWSC9woro3jMk4ABEhnS+0Q==",
       "requires": {
+        "@particle/device-os-protobuf": "^1.1.0",
         "protobufjs": "^6.11.2",
-        "usb": "^1.9.2"
+        "usb": "1.9.2"
       }
     },
     "path-exists": {
@@ -2734,9 +2743,9 @@
       }
     },
     "protobufjs": {
-      "version": "6.11.2",
-      "resolved": "https://registry.npmjs.org/protobufjs/-/protobufjs-6.11.2.tgz",
-      "integrity": "sha512-4BQJoPooKJl2G9j3XftkIXjoC9C0Av2NOrWmbLWT1vH32GcSUHjM0Arra6UfTsVyfMAuFzaLucXn1sadxJydAw==",
+      "version": "6.11.3",
+      "resolved": "https://registry.npmjs.org/protobufjs/-/protobufjs-6.11.3.tgz",
+      "integrity": "sha512-xL96WDdCZYdU7Slin569tFX712BxsxslWwAfAhCYjQKGTq7dAU91Lomy6nLLhh/dyGhk/YH4TwTSRxTzhuHyZg==",
       "requires": {
         "@protobufjs/aspromise": "^1.1.2",
         "@protobufjs/base64": "^1.1.2",
