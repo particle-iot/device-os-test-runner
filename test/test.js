@@ -11,6 +11,7 @@ chai.use(chaiAsPromised);
 chai.use(sinonChai);
 
 const { expect } = chai;
+const sinon = require('sinon');
 
 class Config {
 	constructor() {
@@ -81,6 +82,7 @@ function fixturePath(...subDirs) {
 
 module.exports = {
 	expect,
+	sinon,
 	config,
 	log,
 	fixturePath
