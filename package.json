@@ -19,7 +19,7 @@
     "lint": "eslint . --ignore-pattern=examples --ignore-pattern=test/fixtures",
     "lint:fix": "npm run lint -- --fix",
     "test": "npm run lint -- --quiet && npm run coverage",
-    "test:unit": "mocha --forbid-only --exclude=\"test/fixtures/**/*.spec.js\" \"test/**/*.spec.js\"",
+    "test:unit": "mocha --forbid-only \"lib/**/*.test.js\"",
     "coverage": "nyc --check-coverage npm run test:unit"
   },
   "dependencies": {
