@@ -1,6 +1,6 @@
 module.exports = {
-	branches: 0,
-	lines: 9,
-	functions: 4,
+	branches: 7,
+	lines: 20,
+	functions: 16,
 	statements: 9
 };
