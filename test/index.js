@@ -1,3 +1,6 @@
+/**
+ * This file contains dependencies and helper functions used in *.test.js files
+ */
 const chai = require('chai');
 const chaiSubset = require('chai-subset');
 const chaiAsPromised = require('chai-as-promised');
@@ -11,6 +14,7 @@ chai.use(chaiAsPromised);
 chai.use(sinonChai);
 
 const { expect } = chai;
+const sinon = require('sinon');
 
 class Config {
 	constructor() {
@@ -81,6 +85,7 @@ function fixturePath(...subDirs) {
 
 module.exports = {
 	expect,
+	sinon,
 	config,
 	log,
 	fixturePath
