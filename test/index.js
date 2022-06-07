@@ -1,3 +1,6 @@
+/**
+ * This file contains dependencies and helper functions used in *.test.js files
+ */
 const chai = require('chai');
 const chaiSubset = require('chai-subset');
 const chaiAsPromised = require('chai-as-promised');
