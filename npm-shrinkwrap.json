@@ -487,9 +487,9 @@
       "dev": true
     },
     "@particle/device-constants": {
-      "version": "1.7.0",
-      "resolved": "https://registry.npmjs.org/@particle/device-constants/-/device-constants-1.7.0.tgz",
-      "integrity": "sha512-tRWR+uIGmpZP2V3BMdevn7ukrAJMmIpyttGMfGQbyJdRmpwr57MBv4HvHXVOUIWjIQcWKgk+V5kySHzycqleSg=="
+      "version": "2.1.0",
+      "resolved": "https://registry.npmjs.org/@particle/device-constants/-/device-constants-2.1.0.tgz",
+      "integrity": "sha512-fxXZTO1UJilppCL+1Mu0Wozxm+xXzrfoAkMkNxeCShHgYbgZ/oosCjaVae6Mv21B/Yy0qBRrE/HIASresEYl0g=="
     },
     "@particle/device-os-protobuf": {
       "version": "1.2.1",
