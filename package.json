@@ -34,7 +34,7 @@
     "particle-api-js": "^9.2.0",
     "particle-usb": "^2.1.0",
     "shellsubstitute": "^1.2.0",
-    "simple-git": "^1.126.0",
+    "simple-git": "^3.15.0",
     "tmp": "^0.1.0"
   },
   "devDependencies": {
