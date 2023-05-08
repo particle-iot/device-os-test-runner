@@ -23,7 +23,7 @@
     "coverage": "nyc --check-coverage npm run test:unit"
   },
   "dependencies": {
-    "@particle/device-constants": "^2.0.0",
+    "@particle/device-constants": "^3.1.11",
     "chai": "^4.3.6",
     "chalk": "^4.1.2",
     "convict": "^5.1.0",
