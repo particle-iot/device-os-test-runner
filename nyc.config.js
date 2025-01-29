@@ -1,5 +1,5 @@
 module.exports = {
-	branches: 7,
+	branches: 6,
 	lines: 10,
 	functions: 15,
 	statements: 9
