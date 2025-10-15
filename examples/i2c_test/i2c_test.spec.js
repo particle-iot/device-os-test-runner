@@ -1,3 +1,4 @@
+'use strict';
 suite('I2C test');
 
 platform('gen2', 'gen3');
