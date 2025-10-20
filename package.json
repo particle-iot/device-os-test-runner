@@ -31,7 +31,7 @@
     "mkdirp": "^0.5.1",
     "mocha": "^8.4.0",
     "particle-api-js": "^11.1.7",
-    "particle-usb": "^4.0.0",
+    "particle-usb": "^4.0.1",
     "shellsubstitute": "^1.2.0",
     "simple-git": "^3.16.0",
     "tmp": "^0.1.0"
