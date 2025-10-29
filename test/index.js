@@ -1,3 +1,4 @@
+'use strict';
 /**
  * This file contains dependencies and helper functions used in *.test.js files
  */

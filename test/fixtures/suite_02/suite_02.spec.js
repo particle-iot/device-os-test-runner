@@ -1,3 +1,4 @@
+'use strict';
 suite('suite_02');
 
 platform('gen2', 'gen3');

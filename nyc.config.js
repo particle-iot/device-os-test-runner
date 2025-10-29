@@ -1,3 +1,4 @@
+'use strict';
 module.exports = {
 	branches: 6,
 	lines: 10,

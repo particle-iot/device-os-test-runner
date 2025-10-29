@@ -1,3 +1,5 @@
+'use strict';
+/* eslint no-undef: 'off' */
 suite('Cloud test');
 
 platform('gen2', 'gen3');
