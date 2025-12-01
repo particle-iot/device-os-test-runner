@@ -19,7 +19,7 @@
         "mkdirp": "^0.5.1",
         "mocha": "^8.4.0",
         "particle-api-js": "^11.1.7",
-        "particle-usb": "^4.0.1",
+        "particle-usb": "^4.0.2",
         "shellsubstitute": "^1.2.0",
         "simple-git": "^3.16.0",
         "tmp": "^0.1.0"
@@ -4081,9 +4081,9 @@
       }
     },
     "node_modules/particle-usb": {
-      "version": "4.0.1",
-      "resolved": "https://registry.npmjs.org/particle-usb/-/particle-usb-4.0.1.tgz",
-      "integrity": "sha512-E/zF4diK97oOMRjEDiwtBRTgSX717nYEgF8SW+pwnpMzGVSmRnqIG8tehG0oWWSG6vjAp7h8DMMrU01zfygzyA==",
+      "version": "4.0.2",
+      "resolved": "https://registry.npmjs.org/particle-usb/-/particle-usb-4.0.2.tgz",
+      "integrity": "sha512-FdtCi+U3fAfw2qwZ9VI9XRmypKl3n9Nlsr7haExFBY0qBUeJoNwUcPBNQDKM+6+jWvA9JUaOaMekf0zGta1YSA==",
       "license": "Apache-2.0",
       "dependencies": {
         "@particle/device-os-protobuf": "^2.6.3",
