@@ -46,6 +46,7 @@ The above snippet defines a minimal suite configuration:
 
 - `suite()` specifies the name of the test suite. device-os-test uses the Mocha's [QUnit](https://mochajs.org/#qunit) interface for its spec files.
 - `platform()` specifies Device OS platforms supported by the suite. `gen2` and `gen3` in the above example are platform tags.
+- `retries()` optionally retries the whole suite after a failure before the runner continues with the next suite.
 
 > Run `device-os-test list --tags` to get the list of recognized tags.
 
@@ -104,6 +105,12 @@ E.g. Run a specific test (for boron) like so:
 device-os-test run boron slo/connect_time -v
 ```
 
+To automatically rerun flaky suites before moving on, pass `--suite-retries=N`:
+
+```sh
+device-os-test run boron --suite-retries=2
+```
+
 - `-v` To diagnose errors, enable verbose logging by providing the runner with a `-v` argument in the command line.
 - `run` tells the device-os-test to start running tests. All other arguments following that command are interpreted as test filters. A filter can be a directory name or a tag.
 - `build` can be used to clean build the specified tests.
@@ -144,8 +151,11 @@ As can be seen in the report, by default, device-os-test runs test cases in diff
 suite('Test suite');
 
 platform('gen2', 'gen3');
+retries(2);
 systemThread('enabled');
 ```
+
+`retries(2)` reruns the whole suite up to two additional times. This is suite-level retry behavior, not Mocha's per-test retry.
 
 ### JavaScript Tests
 
