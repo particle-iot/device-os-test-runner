@@ -35,7 +35,7 @@
     "particle-usb": "^4.0.2",
     "shellsubstitute": "^1.2.0",
     "simple-git": "^3.16.0",
-    "tmp": "^0.1.0"
+    "tmp": "^0.2.6"
   },
   "devDependencies": {
     "chai-as-promised": "^7.1.1",
