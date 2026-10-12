@@ -22,7 +22,7 @@
     "coverage": "nyc --check-coverage npm run test:unit"
   },
   "dependencies": {
-    "@particle/device-constants": "^4.1.0",
+    "@particle/device-constants": "^4.2.1",
     "@particle/device-os-protobuf": "4.0.2",
     "addr2line": "^0.0.6",
     "chai": "^4.3.6",
